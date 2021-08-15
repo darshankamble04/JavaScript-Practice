@@ -1,0 +1,38 @@
+console.log("It Works");
+let name = "Darshan";
+let greeting = "Good Evening";
+let html = `      <h1>This is heading</h1>            
+<p>This is paragraph</p>                `;
+let html2 = `<h1>This is heading</h1>            
+<p>This is paragraph</p>1`;
+
+
+// STRING METHODS  --------------------------------
+// Adding two string
+// console.log(name + " " + greeting);
+// console.log(html.concat(name));
+// console.log(html.concat(name, greeting));
+console.log(html.length);
+console.log(html.search("h1"));
+console.log(html.toLowerCase());
+console.log(html.toUpperCase());
+
+console.log(html[1]);
+console.log(html.charAt(3));
+console.log(html.indexOf("heading"));
+console.log(html.lastIndexOf("heading"));
+console.log(html.includes("para"))
+console.log(html.endsWith("</p>"))
+console.log(html.charCodeAt(2)) //returns an unicode
+    // console.log(html.localeCompare(html2));
+    // console.log(html.match())
+console.log(html.repeat(12)); // it repeats str 12 times
+console.log(html.replace("<h1>", "</h2>"));
+console.log(html.slice(0, 5));
+console.log(html.split(" "));
+let a = html.split(" ");
+console.log(a.splice(2, 1));
+console.log(html.startsWith("<h1>"));
+console.log(html.substr(1, 4)) // o/t : h1>T     (n,n)
+console.log(html.substring(1, 4)) // o/t : h1>     (n,n-1)
+console.log(html.trim()) // it remove all whitespaces
