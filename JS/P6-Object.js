@@ -19,15 +19,6 @@ let marks = {
     pratik: 25
 }
 
-// CONSTRUCTOR IN OBJ
-
-function car(name, speed) {
-    this.carName = name;
-    this.carSpeed = speed;
-}
-let car1 = new car("BMW", 180);
-console.log(car1);
-
 // A REAL LIFE EXAMPLE ---------------------------------------------
 let user = {
     firstName: "Darshan",
@@ -58,3 +49,22 @@ for (let i = 0; i < val1.length; i++) {
     // console.log(ele);
     // console.log(i);
 }
+
+// adding another key : value pair into object
+// marks.Yash = 01;
+// marks.gavri = 30;
+// console.log(marks);
+
+// let blank = new Object()
+// blank.A1 = "AABB"
+// blank.B2 = "ccdd"
+// console.log(blank)
+
+// CONSTRUCTOR IN OBJ
+
+// function car(name, speed) {
+//     this.carName = name;
+//     this.carSpeed = speed;
+// }
+// let car1 = new car("BMW", 180);
+// console.log(car1);
