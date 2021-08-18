@@ -26,8 +26,8 @@ let user = {
     loginCount: 32,
     faceBookSignIn: true,
     courseList: [],
-    buyAnyCourse: ((courseName) => {
-        user.courseList.push(courseName);
+    buyAnyCourse: (function(courseName) {
+        this.courseList.push(courseName);
     }),
     courseCount: (() => {
         return `${user.firstName} is enrolled in total ${user.courseList.length} courses`
@@ -68,3 +68,6 @@ for (let i = 0; i < val1.length; i++) {
 // }
 // let car1 = new car("BMW", 180);
 // console.log(car1);
+
+
+console.log(Math.pow(3, 4))
